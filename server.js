@@ -2,6 +2,7 @@ const express = require("express");
 const dbConfig = require("./config/database.config");
 const mongoose = require("mongoose");
 const app = express();
+require("./app/routes/note.routes.js")(app);
 
 app.use(
   express.urlencoded({
